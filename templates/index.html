@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}" />
+    <link rel="stylesheet"  href="{{ url_for('static', filename='/utils.css') }}" />
+  </head>
+  <body>
+    <header>
+      BOOK BY BRAIN
+    </header>
+    <div>
+      <div class="description">
+        Our project helps to map user's brain function to some specific books according to user's mood.
+      </div>
+    </div>
+  <hr>
+    <div>
+      <div class="table">
+        <!---<div class="col1">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>--->
+        <div class="file">
+        <form action="/" method="post" enctype="multipart/form-data">
+          <label class="form-label" for="customFile">Upload file</label>
+          <input type="file" name="imgfile" class="form-control" id="customFile"  />
+          <div class="submit">
+            <input type="submit" value="Predict Book"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="table1">
+      <div class="text">
+        TOP 5 RECOMMENDATIONS!
+      </div>
+        <div class="col">
+            <h2><a href="https://www.google.com/search?q={{ book_1 }}" target="_blank">{{ book_1 }}</a></h2>
+        </div>
+        <div class="col">
+            <h2 style="margin-top: 5px;"><a href="https://www.google.com/search?q={{ book_2 }}" target="_blank">{{ book_2 }}</a></h2>
+        </div>
+        <div class="col">
+            <h2 style="margin-top: 5px;"><a href="https://www.google.com/search?q={{ book_3 }}" target="_blank">{{ book_3 }}</a></h2>
+        </div>
+        <div class="col">
+            <h2 style="margin-top: 5px;"><a href="https://www.google.com/search?q={{ book_4 }}" target="_blank">{{ book_4 }}</a></h2>
+        </div>
+        <div class="col">
+            <h2 style="margin-top: 5px ;"><a href="https://www.google.com/search?q={{ book_5 }}" target="_blank">{{ book_5 }}</a><br></h2>
+    </div>
+    </div>
+    
+    <div class="footer">Made by : Rishant Pal, Kashish Ranjan, Tanay Gada and Raghav Mittal.</div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+header{
+    text-align: center;
+    padding: 1vh 0vh 2vh;
+    font-size: 3rem;
+    font-family:'Sansita Swashed', cursive;
+}
+.description{
+    font-size: 1.1em;
+    font-family: 'Handlee', cursive;
+}
+.col1{
+    font-size: 1em;
+    font-family: 'Handlee', cursive;
+}
+.text{
+    font-size: 1.6em;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+}
+.file {
+    font-size: 1.4em;
+    font-family: 'Handlee', cursive; 
+}
+.footer{
+    font-size: 1.4em;
+    font-family: 'Sans-sarif', cursive;
+}
